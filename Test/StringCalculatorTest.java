@@ -13,6 +13,6 @@ public class StringCalculatorTest {
 
     @Test
     public void testStringWithOneNumber() {
-        Assertions.assertEquals(1, calculator.Add("1"));
+        Assertions.assertEquals(2147483647, calculator.Add("2147483647"));
     }
 }
