@@ -17,7 +17,8 @@ public class StringCalculatorTest {
     }
 
     @Test
-    public void testStringWithTwoNumbers() {
-        Assertions.assertEquals(3, calculator.Add("1,2"));
+    public void testStringWithTwoSingleDigitNumbers() {
+        Assertions.assertEquals(18, calculator.Add("9,9"));
     }
+
 }
