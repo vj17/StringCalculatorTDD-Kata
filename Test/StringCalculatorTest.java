@@ -4,9 +4,15 @@ import com.package1.StringCalculator;
 
 public class StringCalculatorTest {
 
+    StringCalculator calculator = new StringCalculator();
+
     @Test
     public void testEmptyString() {
-        StringCalculator calculator = new StringCalculator();
         Assertions.assertEquals(0, calculator.Add(""));
+    }
+
+    @Test
+    public void testStringWithOneNumber() {
+        Assertions.assertEquals(1, calculator.Add("1"));
     }
 }
