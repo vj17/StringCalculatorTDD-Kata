@@ -6,6 +6,14 @@ public class StringCalculator {
         if(numbers.equals(""))
             return 0;
 
-        return Integer.parseInt(numbers);
+        if(!numbers.contains(","))
+            return Integer.parseInt(numbers);
+
+        String first = numbers.substring(0,1);
+        String second = numbers.substring(2);
+
+        int sum = Integer.parseInt(first) + Integer.parseInt(second);
+        return sum;
+
     }
 }

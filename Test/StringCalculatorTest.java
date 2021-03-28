@@ -15,4 +15,9 @@ public class StringCalculatorTest {
     public void testStringWithOneNumber() {
         Assertions.assertEquals(2147483647, calculator.Add("2147483647"));
     }
+
+    @Test
+    public void testStringWithTwoNumbers() {
+        Assertions.assertEquals(3, calculator.Add("1,2"));
+    }
 }
