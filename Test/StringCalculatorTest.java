@@ -23,6 +23,6 @@ public class StringCalculatorTest {
 
     @Test
     public void testStringWithTwoDoubleDigitNumbers() {
-        Assertions.assertEquals(24, calculator.Add("12,12"));
+        Assertions.assertEquals(198, calculator.Add("99,99"));
     }
 }

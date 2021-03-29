@@ -3,4 +3,4 @@ Test Cases for the Add method of String Calculator
 1. Empty String: " " => 0 - passed
 2. Single Number: "3", "34", "5678" => 3, 34, 5678 - passed
 3. Two Numbers (Single Digits): "1,2" => 3, "5,7" => 12, "9,9" => 18 - passed
-4. Two Numbers (Double Digits): "12,12" => 24, "99,99" => 198
+4. Two Numbers (Double Digits): "12,12" => 24, "99,99" => 198 - passed

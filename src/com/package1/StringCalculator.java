@@ -9,8 +9,10 @@ public class StringCalculator {
         if(!numbers.contains(","))
             return Integer.parseInt(numbers);
 
-        String first = numbers.substring(0,1);
-        String second = numbers.substring(2);
+        int indexOfComma = numbers.indexOf(",");
+
+        String first = numbers.substring(0, indexOfComma);
+        String second = numbers.substring(indexOfComma + 1);
 
         int sum = Integer.parseInt(first) + Integer.parseInt(second);
         return sum;
