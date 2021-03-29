@@ -35,4 +35,9 @@ public class StringCalculatorTest {
     public void testStringWithTwoNumbersTwoTripleDigits() {
         Assertions.assertEquals(1998, calculator.Add("999,999"));
     }
+
+    @Test
+    public void testStringWithTwoNumbersOneTripleDigitOneSingleDigit() {
+        Assertions.assertEquals(1008, calculator.Add("999,9"));
+    }
 }
