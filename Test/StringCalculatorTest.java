@@ -40,4 +40,9 @@ public class StringCalculatorTest {
     public void testStringWithTwoNumbersOneTripleDigitOneSingleDigit() {
         Assertions.assertEquals(1008, calculator.Add("999,9"));
     }
+
+    @Test
+    public void testStringWithTwoNumbersOneTripleDigitOneDoubleDigit() {
+        Assertions.assertEquals(1098, calculator.Add("999,99"));
+    }
 }

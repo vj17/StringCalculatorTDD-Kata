@@ -7,4 +7,4 @@ Test Cases for the Add method of String Calculator
 5. Two Numbers (One Single Digit, One Double Digit): "9,12" => 21, "9,99" => 108 - passed
 6. Two Numbers (Two Triple Digits): "100,100" => 200, "999,999" => 1998 - passed
 7. Two Numbers (One Triple Digit, One Single Digit): "111,0" => 111, "999,9" => 1008 - passed
-
+8. Two Numbers (One Triple Digit, One Double Digit): "100,20" => 120, "999,99" => 1098 - passed
