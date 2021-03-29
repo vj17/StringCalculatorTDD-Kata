@@ -19,6 +19,5 @@ public class StringCalculator {
             sum += Integer.parseInt(s);
 
         return sum;
-
     }
 }
