@@ -50,4 +50,11 @@ public class StringCalculatorTest {
     public void testStringWithTwoNumbersTwoFourDigits() {
         Assertions.assertEquals(19998, calculator.Add("9999,9999"));
     }
+
+    @Test
+    public void testStringWithTwoRandomNumbers() {
+        int a = (int) Math.round(Math.random() * 1000);
+        int b = (int) Math.round(Math.random() * 10000000);
+        Assertions.assertEquals(a+b, calculator.Add("" + a + "," + b));
+    }
 }

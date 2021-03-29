@@ -15,6 +15,7 @@ public class StringCalculator {
         String second = numbers.substring(indexOfComma + 1);
 
         int sum = Integer.parseInt(first) + Integer.parseInt(second);
+
         return sum;
 
     }
