@@ -25,4 +25,9 @@ public class StringCalculatorTest {
     public void testStringWithTwoDoubleDigitNumbers() {
         Assertions.assertEquals(198, calculator.Add("99,99"));
     }
+
+    @Test
+    public void testStringWithTwoNumbersOneSingleDigitOneDoubleDigit() {
+        Assertions.assertEquals(108, calculator.Add("9,99"));
+    }
 }
