@@ -11,7 +11,7 @@ public class StringCalculator {
         if(!numbers.contains(","))
             return Integer.parseInt(numbers);
 
-        String[] numbersArray = numbers.split(",");
+        String[] numbersArray = numbers.split("(,|\\n)");
 
         int sum = 0;
 
