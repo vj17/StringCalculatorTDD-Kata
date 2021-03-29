@@ -60,6 +60,6 @@ public class StringCalculatorTest {
 
     @Test
     public void testStringWithUnknownAmountOfNumbers() {
-        Assertions.assertEquals(-1, calculator.Add("23,44,4,4,4"));
+        Assertions.assertEquals(126, calculator.Add("9,9,99,9"));
     }
 }
