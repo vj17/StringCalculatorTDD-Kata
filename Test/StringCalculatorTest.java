@@ -57,4 +57,9 @@ public class StringCalculatorTest {
         int b = (int) Math.round(Math.random() * 10000000);
         Assertions.assertEquals(a+b, calculator.Add("" + a + "," + b));
     }
+
+    @Test
+    public void testStringWithUnknownAmountOfNumbers() {
+        Assertions.assertEquals(-1, calculator.Add("23,44,4,4,4"));
+    }
 }
