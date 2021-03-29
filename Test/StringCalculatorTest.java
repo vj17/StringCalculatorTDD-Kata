@@ -70,6 +70,6 @@ public class StringCalculatorTest {
 
     @Test
     public void testStringWithSemicolonDelimiter() {
-        Assertions.assertEquals(6, calculator.Add("“//;\\n1;2"));
+        Assertions.assertEquals(3, calculator.Add("“//;\\n1;2"));
     }
 }
