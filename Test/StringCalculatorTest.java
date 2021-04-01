@@ -74,6 +74,11 @@ public class StringCalculatorTest {
     }
 
     @Test
+    public void testStringWithColonDelimiter() {
+        Assertions.assertEquals(8, calculator.Add("//:\n1:2:5"));
+    }
+
+    @Test
     public void testStringWithNegativeNumbers() {
         try {
             calculator.Add("-1,3");
