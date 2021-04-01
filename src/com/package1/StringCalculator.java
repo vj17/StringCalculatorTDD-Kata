@@ -2,11 +2,15 @@ package com.package1;
 
 public class StringCalculator {
 
-
     public int Add(String numbers) {
 
         if (numbers.equals(""))
             return 0;
+
+        return calculateSum(extractNumbers(numbers));
+    }
+
+    private String[] extractNumbers(String numbers) {
 
         String delimiter = null;
 
@@ -15,12 +19,6 @@ public class StringCalculator {
             numbers = numbers.substring(4);
         }
 
-        String[] numbersArray = extractNumbers(numbers, delimiter);
-
-        return calculateSum(numbersArray);
-    }
-
-    private String[] extractNumbers(String numbers, String delimiter) {
         return numbers.split("(,|\\n|" + delimiter + ")");
     }
 
