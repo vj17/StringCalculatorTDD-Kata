@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class StringCalculator {
 
-    private static int count = 0;
+    private int count = 0;
 
     public int Add(String numbers) {
 
