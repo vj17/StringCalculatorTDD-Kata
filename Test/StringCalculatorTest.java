@@ -76,20 +76,20 @@ public class StringCalculatorTest {
     @Test
     public void testStringWithNegativeNumbers() {
         try {
-            calculator.Add("-1, 3");
+            calculator.Add("-1,3");
         }
         catch (IllegalArgumentException e) {
-            Assertions.assertEquals(e.getMessage(), "Negatives not allowed: -1");
+            Assertions.assertEquals(e.getMessage(), "Negatives not allowed: [-1]");
         }
     }
 
     @Test
     public void testStringWithMultipleNegativeNumbers() {
         try {
-            calculator.Add("-1, 2, 6, -32");
+            calculator.Add("-1,2,6,-32");
         }
         catch (IllegalArgumentException e) {
-            Assertions.assertEquals(e.getMessage(), "Negatives not allowed: -1, -32");
+            Assertions.assertEquals(e.getMessage(), "Negatives not allowed: [-1, -32]");
         }
     }
 }

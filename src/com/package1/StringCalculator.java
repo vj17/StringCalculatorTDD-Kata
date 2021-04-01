@@ -1,5 +1,6 @@
 package com.package1;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class StringCalculator {
@@ -26,15 +27,21 @@ public class StringCalculator {
 
     private int calculateSum(String[] numbersArray) {
         int sum = 0;
+        ArrayList negativeNumbers = new ArrayList();
 
         for (String s : numbersArray) {
             int num = Integer.parseInt(s);
-            
-            if (num < 0)
-                throw new IllegalArgumentException("Negatives not allowed: " + num);
 
-            sum += num;
+            if (num < 0)
+                negativeNumbers.add(num);
+
+            else
+                sum += num;
         }
+
+        if (negativeNumbers.size() > 0)
+            throw new IllegalArgumentException("Negatives not allowed: " + negativeNumbers);
+
         return sum;
     }
 }
