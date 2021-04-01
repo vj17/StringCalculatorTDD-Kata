@@ -12,4 +12,4 @@ Test Cases for the Add method of String Calculator
 10. Two Numbers (Random): passed
 11. Handle Unknown Amount of Numbers: "1,2,3" => 6, "9,9,99,9" => 126 - passed
 12. Allow \n as a delimiter with comma: "1\n2,3" => 6 - passed
-13. Allow ; as a delimiter with \n: "“//;\n1;2 => 6
+13. Allow ; as a delimiter with \n: "“//;\n1;2 => 6 - passed
