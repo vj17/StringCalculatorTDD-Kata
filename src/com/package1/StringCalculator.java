@@ -1,16 +1,23 @@
 package com.package1;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class StringCalculator {
 
+    private static int count = 0;
+
     public int Add(String numbers) {
+
+        count++;
 
         if (numbers.equals(""))
             return 0;
 
         return calculateSum(extractNumbers(numbers));
+    }
+
+    public int GetCalledCount() {
+        return count;
     }
 
     private String[] extractNumbers(String numbers) {

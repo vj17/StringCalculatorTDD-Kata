@@ -97,9 +97,4 @@ public class StringCalculatorTest {
             Assertions.assertEquals(e.getMessage(), "Negatives not allowed: [-1, -32]");
         }
     }
-
-    @Test
-    public void testAddCount() {
-        Assertions.assertEquals(17, calculator.GetCalledCount());
-    }
 }
