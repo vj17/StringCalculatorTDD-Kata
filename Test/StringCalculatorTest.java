@@ -55,7 +55,7 @@ public class StringCalculatorTest {
     public void testStringWithTwoRandomNumbers() {
         int a = (int) Math.round(Math.random() * 1000);
         int b = (int) Math.round(Math.random() * 10000000);
-        Assertions.assertEquals(a+b, calculator.Add("" + a + "," + b));
+        Assertions.assertEquals(a + b, calculator.Add("" + a + "," + b));
     }
 
     @Test
@@ -75,6 +75,11 @@ public class StringCalculatorTest {
 
     @Test
     public void testStringWithNegativeNumbers() {
-        Assertions.assertEquals("Negatives not allowed: -1", calculator.Add("-1, 3"));
+        try {
+            calculator.Add("-1, 3");
+        }
+        catch (IllegalArgumentException e) {
+            Assertions.assertEquals(e.getMessage(), "Negatives not allowed: -1");
+        }
     }
 }

@@ -1,5 +1,7 @@
 package com.package1;
 
+import java.util.Arrays;
+
 public class StringCalculator {
 
     public int Add(String numbers) {
@@ -25,9 +27,14 @@ public class StringCalculator {
     private int calculateSum(String[] numbersArray) {
         int sum = 0;
 
-        for (String s : numbersArray)
-            sum += Integer.parseInt(s);
+        for (String s : numbersArray) {
+            int num = Integer.parseInt(s);
+            
+            if (num < 0)
+                throw new IllegalArgumentException("Negatives not allowed: " + num);
 
+            sum += num;
+        }
         return sum;
     }
 }
