@@ -72,4 +72,9 @@ public class StringCalculatorTest {
     public void testStringWithSemicolonDelimiter() {
         Assertions.assertEquals(3, calculator.Add("//;\n1;2"));
     }
+
+    @Test
+    public void testStringWithNegativeNumbers() {
+        Assertions.assertEquals("Negatives not allowed: -1", calculator.Add("-1, 3"));
+    }
 }
